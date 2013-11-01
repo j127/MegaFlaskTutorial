@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head lang="eo">
-    {% if title %}
-    <title>{{title}} | Flaska Blogeto</title>
-    {% else %}
-    <title>Bonvenon al la Flaska Blogeto</title>
-    {% endif %}
-    <meta charset="utf-8" />
-</head>
-<body>
-    <h1>Saluton, {{user.nickname}}!</h1>
-    {% for post in posts %}
-    <p><strong>{{post.author.nickname}}</strong> says: {{post.body}}</p>
-    {% endfor %}
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<h1>Saluton, {{user.nickname}}</h1>
+
+{% for post in posts %}
+<div><p><strong>{{post.author.nickname}} diras:</strong> {{post.body}}</p></div>
+
+{% endfor %}
+{% endblock %}

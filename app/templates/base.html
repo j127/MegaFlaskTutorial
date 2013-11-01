@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head lang="eo">
+    {% if title %}
+    <title>{{title}} | Flaska Blogeto</title>
+    {% else %}
+    <title>Bonvenon al la Flaska Blogeto</title>
+    {% endif %}
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div>Blogeto: <a href="/">Hejmo</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
