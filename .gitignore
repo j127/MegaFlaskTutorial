@@ -2,4 +2,5 @@
 *.swp
 *.swo
 *.pyc
+routes.py
 flask/
