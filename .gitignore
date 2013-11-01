@@ -4,3 +4,5 @@
 *.pyc
 routes.py
 flask/
+config.py
+*.bak
